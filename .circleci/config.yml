@@ -17,11 +17,11 @@ workflows:
   scheduled-wordflow:
     triggers:
       - schedule:
-        cron: "0 22 * * *"     
-        filters:
-          branches:
-            only:
-              - master
+          cron: "0 22 * * *"     
+          filters:
+            branches:
+              only:
+                - master
     jobs:
       - build-and-test
 
