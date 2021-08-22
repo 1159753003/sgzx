@@ -7,7 +7,7 @@ jobs:
       - image:  circleci/python:3.7.8
     steps:
       - checkout
-      - run: echo ./index
+      - run: ./index
 
 
 # Orchestrate our job run sequence
