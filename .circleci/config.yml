@@ -16,7 +16,7 @@ workflows:
       - build-and-test
   scheduled-wordflow:
     triggers:
-      -schedule:
+      - schedule:
         cron: "0 0 22 * *"     
         filters:
           branches:
