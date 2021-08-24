@@ -8,6 +8,10 @@ orbs:
   python: circleci/python@1.2
 
 workflows:
+  version: 2
+  commit:
+    jobs:
+      - build-and-test  
   scheduled-wordflow:
     triggers:
       - schedule:
